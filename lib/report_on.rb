@@ -1,3 +1,5 @@
+require 'report_on/activity'
+
 module ReportOn
   def self.report(username)
     activity = Activity.new(username)
