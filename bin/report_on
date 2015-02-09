@@ -1,3 +1,5 @@
 #!/usr/bin/env ruby
 
-puts 'botandrose committed today.'
+require_relative '../lib/report_on'
+
+puts ReportOn.report(ARGV.first)
