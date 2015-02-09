@@ -8,8 +8,8 @@ describe ReportOn::Activity do
     end
 
     it 'returns false if the user did not commit today.' do
-      erniedog = described_class.new("moedu23")
-      expect(erniedog.code_today?).to eq false
+      gubito = described_class.new("gubito")
+      expect(gubito.code_today?).to eq false
     end
   end
 end
