@@ -8,6 +8,8 @@ module ReportOn
     end
 
     def code_today?
+      # load twice to make sure that the commit graph is generated
+      `curl https://github.com/#{username}`
       response = `curl https://github.com/#{username}`
       if response.include? 'data-count="0" data-date="2015-02-08"'
         false
